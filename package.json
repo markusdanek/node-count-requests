@@ -1,0 +1,14 @@
+{
+  "name": "node-count-requests",
+  "version": "0.0.1",
+  "author": "Markus Danek",
+  "private": true,
+  "scripts": {
+    "start": "nodemon --exec node server.js"
+  },
+  "dependencies": {
+    "body-parser": "latest",
+    "express": "latest",
+    "morgan": "latest"
+  }
+}
