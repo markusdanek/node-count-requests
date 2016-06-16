@@ -17,7 +17,7 @@ app.get('/value', function(req, res, next) {
 
 app.use('/api', require('./api.js'));
 
-var server = app.listen(3000, function() {
+var server = app.listen(8888, function() {
     var host = server.address().address;
     var port = server.address().port;
     console.log("Server listening at http://%s:%s", host, port);

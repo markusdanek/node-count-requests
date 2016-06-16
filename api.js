@@ -5,17 +5,17 @@ var counter = require('./counter.js');
 
 router.get('/a', function(req, res, next) {
     counter.addCount();
-    res.send('API Called');
+    res.send(counter.getCount() + '/a');
 });
 
 router.get('/b', function(req, res, next) {
     counter.addCount();
-    res.send('API Called');
+    res.send(counter.getCount() + '/b');
 });
 
 router.get('/c', function(req, res, next) {
     counter.addCount();
-    res.send('API Called');
+    res.send(counter.getCount() + '/c');
 });
 
 module.exports = router;
