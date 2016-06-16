@@ -1,4 +1,4 @@
-var counter = function() {
+var counterC = function() {
     var count = 0;
 
     this.addCount = function() {
@@ -10,14 +10,14 @@ var counter = function() {
     }
 }
 
-counter.instance = null;
+counterC.instance = null;
 
-counter.getInstance = function() {
+counterC.getInstance = function() {
     if (this.instance === null) {
-        this.instance = new counter();
+        this.instance = new counterC();
     }
 
     return this.instance;
 }
 
-module.exports = counter.getInstance();
+module.exports = counterC.getInstance();

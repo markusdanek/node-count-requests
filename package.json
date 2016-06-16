@@ -9,6 +9,8 @@
   "dependencies": {
     "body-parser": "latest",
     "express": "latest",
+    "fs": "latest",
+    "http": "latest",
     "morgan": "latest"
   }
 }
